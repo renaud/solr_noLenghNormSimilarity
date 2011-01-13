@@ -1,0 +1,9 @@
+
+Overwrites (and disables) lengthNorm in Lucene Similarity
+See http://web.archiveorange.com/archive/v/AAfXfa9RqrT9Mjm7yu4e
+
+INSTALL
+1) Put this jar in <solr-home>/lib 
+2) Add this to your  schema.xml:
+<!-- disables fieldLength in Similarity-->
+<similarity class="org.apache.lucene.search.NoLengthNormSimilarity"/>
